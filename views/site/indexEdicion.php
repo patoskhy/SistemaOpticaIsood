@@ -14,7 +14,7 @@ $this->title = $titulo;
          &nbsp;
     </div>
 </div>
- <hr style="border: #FF6000 1px solid;">
+ <hr style="border: #dd4b39 1px solid;">
 <div class="row">
    
     <div data-step="2" data-intro="Se dede ingresar la imagen, se presiona upload. despues presionar descargar" class="col-md-12" >

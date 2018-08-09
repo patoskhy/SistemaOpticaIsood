@@ -713,7 +713,7 @@ class ComprasController extends Controller {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
         </head>
-        <body style="padding: 0 5% ;margin: 0 5%;color:dimgrey;font-family: Arial, Helvetica, sans-serif;">
+        <body align="center" style="padding: 0 5% ;margin: 0 5%;color:dimgrey;font-family: Arial, Helvetica, sans-serif;">
         
             <table style="width:100%">
                 <tr>

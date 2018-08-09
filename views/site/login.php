@@ -12,13 +12,13 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
     <div id="login-overlay" class="modal-dialog">
         <div class="modal-content sombra" style="margin-top:15%; ">
-            <div class="modal-header text-center" style="background-color:#FF6000;color:white">
+            <div class="modal-header text-center" style="background-color:#dd4b39;color:white">
                 <h4 class="modal-title" id="myModalLabel"><?=$this->params['titlePage']?></h4>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-5">
-                        <img class="profile-img" width="240px" src="<?php echo Yii::$app->request->baseUrl . '/img/isood.jpg' ?>" alt="">
+                        <img class="profile-img" width="240px" src="<?php echo Yii::$app->request->baseUrl . '/img/beraca.png' ?>" alt="">
                     </div>
                     <div class="col-md-7">
                         <?php
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <div class="form-group">
                             <div class="col-lg-12">
-                        <?= Html::submitButton('INGRESAR', ['class' => 'btn btn-block btn-sistema btn-flat', 'style' => 'background-color:#FF6000; border-color:#FF6000;', 'name' => 'login-button','VALUE' => 'INGRESAR']) ?>
+                        <?= Html::submitButton('INGRESAR', ['class' => 'btn btn-block btn-sistema btn-flat', 'style' => 'background-color:#dd4b39; border-color:#dd4b39;', 'name' => 'login-button','VALUE' => 'INGRESAR']) ?>
                             </div>
                         </div>   
 <?php ActiveForm::end(); ?>
