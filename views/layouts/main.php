@@ -30,7 +30,7 @@ if (Yii::$app->controller->action->id === 'login') {
         <head>
             <meta charset="<?= Yii::$app->charset ?>"/>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="icon" type="image/png" href="<?php echo Yii::$app->request->baseUrl . '/img/icono-isood.png' ?>" />
+            <link rel="icon" type="image/png" href="<?php echo Yii::$app->request->baseUrl . '/img/icono-beraca.png' ?>" />
 
             <?= Html::csrfMetaTags() ?>
             <title><?= Html::encode($this->title) ?></title>
@@ -61,7 +61,7 @@ if (Yii::$app->controller->action->id === 'login') {
 
             </div>
             <script src="<?= Yii::$app->request->baseUrl ?>/js/jquery-3.2.1.min.js"></script>
-			 <script src="<?= Yii::$app->request->baseUrl ?>/js/jquery-migrate-3.0.0.js"></script>
+            <script src="<?= Yii::$app->request->baseUrl ?>/js/jquery-migrate-3.0.0.js"></script>
             <?php $this->endBody() ?>
             <script type="text/javascript">
 
