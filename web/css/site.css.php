@@ -1,3 +1,14 @@
+<?php
+header('content-type:text/css');
+
+$est = parse_ini_file("site-estilos.ini");
+
+$colorPrincipal = $est["color.principal"];
+$colorSecundario = $est["color.secundario"];
+
+
+echo <<<FINCSS
+
 html,
 body {
     height: 100%;
@@ -134,20 +145,24 @@ a.desc:after {
 
 .btn-sistema {
     color: #fff;
-    background-color: #ff7f32;
-    border-color: rgba(0, 0, 0, 0.2);
+    background-color: $colorPrincipal;
+    border-color: $colorSecundario;
 }
 
 .skin-red .main-header .navbar {
-    background-color: #ff7f32;
+    background-color: $colorPrincipal;
 }
 
 .linea {
-    border: #ff7f32 1px solid;
+    border: $colorPrincipal 1px solid;
 }
 
 .headModal {
-    background-color: #ff7f32;
+    background-color: $colorPrincipal;
     color: white;
     font-weight: bold;
 }
+
+
+FINCSS;
+?>
