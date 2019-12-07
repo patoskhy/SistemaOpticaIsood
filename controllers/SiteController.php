@@ -164,6 +164,7 @@ class SiteController extends BaseController {
     public function actionBuscarCliente($term) {
         
         if (Yii::$app->request->isAjax) {
+			$results = [];
             $persona =  Persona::find()
                             ->where("CAT_PERSONA = 'P00001' AND (RUT like '%" .$term."%' OR NOMBRE LIKE '%" .$term."%')")
                               ->all();
@@ -175,15 +176,16 @@ class SiteController extends BaseController {
                 ];
             }
             //var_dump($persona);die();
-            \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+            //\Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
              echo Json::encode($results);
         }
     }
 
     public function actionBuscarDoctor($term) {
         if (Yii::$app->request->isAjax) {
+			$results = [];
             $persona =  Persona::find()
-                            ->where("CAT_PERSONA = 'P00002' AND (RUT like '%" .$term."%' OR NOMBRE LIKE '%" .$term."%')")
+                            ->where("CAT_PERSONA = 'P00002' ")
                               ->all();
             
              foreach($persona as $model) {
@@ -193,13 +195,14 @@ class SiteController extends BaseController {
                 ];
             }
             //var_dump($persona);die();
-            \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+            //\Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
              echo Json::encode($results);
         }
     }
 
     public function actionBuscarProveedor($term) {
         if (Yii::$app->request->isAjax) {
+			$results = [];
             $persona =  Proveedor::find()
                             ->where(" (ID_PROVEEDOR like '%" .$term."%' OR CONTACTO LIKE '%" .$term."%' OR NOMBRE_EMPRESA LIKE '%" .$term."%')")
                               ->all();
@@ -211,7 +214,7 @@ class SiteController extends BaseController {
                 ];
             }
             //var_dump($persona);die();
-            \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
+            //\Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
              echo Json::encode($results);
         }
     }

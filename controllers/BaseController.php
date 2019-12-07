@@ -50,8 +50,8 @@ class BaseController extends Controller {
 		$this->view->params['titlePage'] = strtoupper($titulo);
         $this->view->params['menuLeft'] = Utils::getMenuLeft(explode("-", Yii::$app->user->id)[0]);
         $this->layout = $layout;
-		$this->view->params['icono'] = '/img/icono-isood.png';
-		$this->view->params['logo'] = '/img/opIsTransparente.png';
+		$this->view->params['icono'] = '/img/icono-beraca.png';
+		$this->view->params['logo'] = '/img/opBeTransparente.png';
 		$this->view->params['titulo'] = $GLOBALS["nombreSistema"]. " - ".strtoupper($titulo);
 	}
 
