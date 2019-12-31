@@ -134,20 +134,20 @@ a.desc:after {
 
 .btn-sistema {
     color: #fff;
-    background-color: #dd4b39;
+    background-color: #ff7f32;
     border-color: rgba(0, 0, 0, 0.2);
 }
 
 .skin-red .main-header .navbar {
-    background-color: #dd4b39;
+    background-color: #ff7f32;
 }
 
 .linea {
-    border: #dd4b39 1px solid;
+    border: #ff7f32 1px solid;
 }
 
 .headModal {
-    background-color: #DD4B39;
+    background-color: #ff7f32;
     color: white;
     font-weight: bold;
 }
